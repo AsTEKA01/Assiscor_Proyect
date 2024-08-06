@@ -1,3 +1,5 @@
+-- CREACION DE LA TABLA DE "USERS" (Usuarios/Empleados) --
+
 CREATE TABLE users (
 
     id_users INT NOT NULL UNIQUE,
@@ -8,6 +10,8 @@ CREATE TABLE users (
     password VARCHAR(100) UNIQUE NOT NULL,
 
 );
+
+-- INSERCCION DE LOS DATOS DENTRO DE LA TABLA DE "USERS" (Usuarios/Empleados) --
 
 INSERT INTO id_users,name,edad,genero,email,password (
     VALUES 
