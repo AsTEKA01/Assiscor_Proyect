@@ -8,6 +8,7 @@ CREATE TABLE users (
     genero VARCHAR(50) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     password VARCHAR(100) UNIQUE NOT NULL,
+    PRIMARY KEY (id_users)
 
 );
 
