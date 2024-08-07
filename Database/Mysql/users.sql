@@ -1,3 +1,8 @@
+-- SE CREA LA BASE DE DATOS Y SE ACTIVA --
+
+CREATE DATABASE Assiscor;
+USE Assiscor;
+
 -- CREACION DE LA TABLA DE "USERS" (Usuarios/Empleados) --
 
 CREATE TABLE users (
