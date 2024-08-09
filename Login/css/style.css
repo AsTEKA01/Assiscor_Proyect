@@ -1,5 +1,9 @@
 body{
+<<<<<<< Updated upstream
     background-color: #D3CFDB;
+=======
+    background-color: rgb(215, 210, 218);
+>>>>>>> Stashed changes
 }
 
 .login{
@@ -7,7 +11,11 @@ body{
 }
 
 .bordered-container {
+<<<<<<< Updated upstream
         border: 4px solid rgb(255, 255, 255);
+=======
+        border: 0px solid rgb(255, 255, 255);
+>>>>>>> Stashed changes
         border-radius: 10px;
         background-color: white;
 }
@@ -16,3 +24,7 @@ body{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
