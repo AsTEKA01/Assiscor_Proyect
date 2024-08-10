@@ -26,3 +26,22 @@ INSERT INTO users (id_users, name,edad,genero,email,password)
     (3, "Juan Sebastian Tovar Roa", 19,"Masculino", "tovarroa09@gmail.com","root9090"),
     (4, "Stiven Ramirez Lugo", 21,"Masculino", "ramirezlugo50@gmail.com","ramirezlugo65"),
     (5, "Maria Victoria Chavarro", 23,"Femenino", "mariavictoria001@gmail.com","1234567");
+
+-- CREACION DE LA TABLA DE "ADMINS" (Admin/Administradores) --
+
+CREATE TABLE admins (
+
+    id_admin INT NOT NULL UNIQUE,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(100) UNIQUE NOT NULL,
+    PRIMARY KEY (id_admin)
+
+);
+
+-- INSERCCION DE LOS DATOS DENTRO DE LA TABLA DE "ADMINS" (Admin/Administradores) --
+
+INSERT INTO admins (id_admin, name,email,password) 
+    VALUES 
+    (1, "Victor lorenzo gutierrez","vgutierrez@gmail.com","root83"),
+    (2, "Mario enrrique martinez","Mario01martinez@gmail.com","0909");
