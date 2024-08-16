@@ -69,6 +69,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Proyect_Assiscor.wsgi.application'
 
+LOGIN_URL = 'login'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -76,18 +77,23 @@ WSGI_APPLICATION = 'Proyect_Assiscor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Assiscor_DataBase',
+        'NAME': 'Assiscor',
         'USER': 'root',
-        'PASSWORD': 'admin',
+        'PASSWORD': '',
         'HOST': 'localhost',
-        'PORT': '',
-        
+        'PORT': '3306'
     }
 }
 
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
+
+AUTHENTICATION_BACKENDS = [
+    'login_app.backends.AdminBackend',  # Asegúrate de que el nombre de tu aplicación esté correctamente especificado
+    'django.contrib.auth.backends.ModelBackend',  # Mantén este si deseas usar también el modelo de usuario predeterminado
+]
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
